@@ -3,4 +3,4 @@
     ,database= 'DBT_TRAINING_MR') }}
     
 
-SELECT * FROM {{ source('RAW', 'CUSTOMER') }}
+SELECT * FROM {{ source('RAW', 'NATION') }}

@@ -1,8 +1,19 @@
 version: 2
+
 sources:
   - name: STAGE
-    description: This is RAW_TEST Database Source Tables used for creating STANDARD_TEST Layer
+    description: This is SOURCE for STAGE
     database: DBT_TRAINING_MR
     tables:
       - name: CUSTOMER
       - name: ORDERS
+      - name: LINEITEM
+      - name: NATION
+  - name: RAW
+    description: This is SOURCE for PUBLISH
+    database: DBT_TRAINING_MR
+    tables:
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: LINEITEM
+      - name: NATION

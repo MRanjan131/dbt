@@ -1,6 +1,9 @@
 {{ config(
     schema= 'STAGE'
     ,database= 'DBT_TRAINING_MR') }}
-    
 
-SELECT * FROM "DBT_TRAINING_MR"."RAW"."ORDERS"
+/*
+config will overwrite the writing location from dbt_project
+*/
+
+SELECT * FROM {{ source('RAW', 'ORDERS') }}
