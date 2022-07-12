@@ -10,10 +10,14 @@ sources:
       - name: LINEITEM
       - name: NATION
   - name: RAW
-    description: This is SOURCE for PUBLISH
+    description: This is SOURCE for STAGE
     database: DBT_TRAINING_MR
     tables:
       - name: CUSTOMER
       - name: ORDERS
       - name: LINEITEM
       - name: NATION
+      - name: V_CUSTOMER
+      - name: V_ORDERS
+      - name: V_LINEITEM
+      - name: V_NATION

@@ -6,4 +6,4 @@
 config will overwrite the writing location from dbt_project
 */
 
-SELECT * FROM {{ source('RAW', 'ORDERS') }}
+SELECT * FROM {{ source('RAW', 'V_ORDERS') }}

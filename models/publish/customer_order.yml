@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: CUSTOMER_ORDER
+    description: "{{ doc('CUSTOMER_ORDER_docs') }}"
+    database: DBT_TRAINING_MR
+    schema: PUBLISH
+    columns:
+      - name: C_CUSTKEY
+        tests:
+          - not_null
+      - name: O_TOTALPRICE
+        tests:
+          - not_null
