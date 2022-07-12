@@ -1,7 +1,7 @@
 version: 2
 models:
   - name: CUSTOMER_ORDER
-    description: "{{ doc('CUSTOMER_ORDER_docs') }}"
+    description: "hello world"
     database: DBT_TRAINING_MR
     schema: PUBLISH
     columns:
