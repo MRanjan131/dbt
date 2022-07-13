@@ -17,9 +17,9 @@ select
    ,O_ORDERPRIORITY
    ,O_SHIPPRIORITY
    ,O_CLERK
-from {{ source('STAGE', 'CUSTOMER') }} c
+from {{ ref('customer') }} c
     -- "DBT_TRAINING_MR"."STAGE"."CUSTOMER" c 
-    left join {{ source('STAGE', 'ORDERS') }} o
+    left join {{ ref('orders') }} o
    -- "DBT_TRAINING_MR"."STAGE"."ORDERS" o 
         on c.c_custkey = o.o_custkey
 order by
